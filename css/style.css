@@ -510,6 +510,9 @@ footer .bloc-footer {
 @media (max-width: 767.98px) {
     /* ... */
 
+    .main-container {
+        padding: 0px;
+    }
 
     header {
         display: flex;
@@ -522,13 +525,14 @@ footer .bloc-footer {
 
     header img {
         width: 100px;
-        margin-right: 140px;
+        margin-right: 10px;
     }
 
     nav a:hover {
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
         border-top: none;
+        padding: 10px;
     }
     
 
@@ -536,11 +540,10 @@ footer .bloc-footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-right: 35px;
-        gap: 15px;
+        margin-left: 80px;
+        gap: 20px;
         width: 375px;
         height: 36px;
-
     }
 
     h1 {
@@ -548,12 +551,14 @@ footer .bloc-footer {
         height: 52px;
         margin: auto;
         padding-top: 20px;
+        padding-left: 60px;
     }
 
     .sous-titre {
         width: 335px;
         height: 19px;
         margin: auto;
+        padding-left: 60px;
     }
 
     .search-bar {
@@ -562,6 +567,7 @@ footer .bloc-footer {
         border: none;
         padding-top: 30px;
         padding-bottom: 15px;
+        padding-left: 30px;
     }
 
     input[type="text"] {
@@ -601,6 +607,7 @@ footer .bloc-footer {
         width: 350px;
         height: 161px;
         margin: auto;
+        padding-left: 50px;
     }
 
     .filter-list {
@@ -616,6 +623,8 @@ footer .bloc-footer {
         height: 38px;
         margin: auto;
         padding-top: 50px;
+        padding-left: 30px;
+        
     }
 
     .hebergements-and-populaires {
@@ -674,6 +683,10 @@ footer .bloc-footer {
         height: 124px;
     }
 
+    .activites-a-marseille {
+        padding-left: 50px;
+    }
+
     .card-activites {
         width: 315px;
         height: 141px;
@@ -693,6 +706,7 @@ footer .bloc-footer {
         display: flex;
         flex-direction: column;
         width: 375px;
+        padding: 30px;
 
     }
 
