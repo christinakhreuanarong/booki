@@ -17,7 +17,6 @@
 body {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 header {
@@ -250,7 +249,7 @@ input:focus {
 .card-hebergement {
     padding: 0px 0px 15px;
     gap: 4px;
-    width: 250px;
+    width: 30%;
     height: 207px;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -300,18 +299,19 @@ input:focus {
 .hebergements-cards {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 }
 
 
 .hebergements-cards img {
     box-sizing: border-box;
-    width: 250px;
+    width: 100%;
     height: 124px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .hebergements-cards .card-title {
@@ -358,7 +358,7 @@ input:focus {
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 134px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -409,7 +409,7 @@ input:focus {
 
 .card-activites-a-marseille img {
     border-radius: 20px 20px 0px 0px;
-    width: 297px;
+    width: 100%;
     height: 380px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
@@ -418,6 +418,7 @@ input:focus {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
     border-radius: 20px;
+    width: 25%;
 }
 
 .card-title {
@@ -489,7 +490,6 @@ footer .bloc-footer {
     }
 
     .card-activites-a-marseille img {
-        width: 205px;
         height: 270px;
     }
 
@@ -510,6 +510,10 @@ footer .bloc-footer {
 @media (max-width: 767.98px) {
     /* ... */
 
+    body {
+        margin: 0px;
+    }
+
     .main-container {
         padding: 0px;
     }
@@ -518,14 +522,12 @@ footer .bloc-footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px;
-        width: 375px;
         height: 115px;
     }
 
     header img {
         width: 100px;
-        margin-right: 10px;
+        margin-right: 50px;
     }
 
     nav a:hover {
@@ -534,31 +536,27 @@ footer .bloc-footer {
         border-top: none;
         padding: 10px;
     }
-    
 
     nav {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-left: 80px;
-        gap: 20px;
-        width: 375px;
-        height: 36px;
+        gap: 50px;
+        padding-right: 15px;
+
     }
 
     h1 {
-        width: 335px;
         height: 52px;
         margin: auto;
         padding-top: 20px;
-        padding-left: 60px;
+        padding-left: 6px;
+        width: 335px;
     }
 
     .sous-titre {
-        width: 335px;
         height: 19px;
         margin: auto;
-        padding-left: 60px;
+        padding-left: 6px;
+        width: 335px;
     }
 
     .search-bar {
@@ -567,7 +565,6 @@ footer .bloc-footer {
         border: none;
         padding-top: 30px;
         padding-bottom: 15px;
-        padding-left: 30px;
     }
 
     input[type="text"] {
@@ -607,7 +604,6 @@ footer .bloc-footer {
         width: 350px;
         height: 161px;
         margin: auto;
-        padding-left: 50px;
     }
 
     .filter-list {
@@ -623,8 +619,6 @@ footer .bloc-footer {
         height: 38px;
         margin: auto;
         padding-top: 50px;
-        padding-left: 30px;
-        
     }
 
     .hebergements-and-populaires {
@@ -636,8 +630,8 @@ footer .bloc-footer {
     .hebergements-and-populaires section {
         border-radius: 0px;
         box-sizing: content-box;
-        padding: 30px 100px;
         width: 300px;
+        padding: 40px;
     }
 
     .hebergements {
@@ -651,6 +645,7 @@ footer .bloc-footer {
     .populaires-cards {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .populaires-cards .card {
@@ -669,6 +664,7 @@ footer .bloc-footer {
     .card-activites-a-marseille {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .card-hebergement {
@@ -685,6 +681,11 @@ footer .bloc-footer {
 
     .activites-a-marseille {
         padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .card-activites {
@@ -698,20 +699,10 @@ footer .bloc-footer {
         height: 141px;
     }
 
-    .card-activites-a-marseille {
-        height: auto;
-    }
-
     footer {
         display: flex;
         flex-direction: column;
-        width: 375px;
         padding: 30px;
 
     }
-
-    footer .bloc-footer {
-        
-    }
-
 }
