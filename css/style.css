@@ -570,6 +570,7 @@ footer .bloc-footer {
 
     nav {
         display: flex;
+        justify-content: center;
         width: 100%;
     }
 
