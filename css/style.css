@@ -537,7 +537,7 @@ footer .bloc-footer {
         border-top: none;
         width: 50%;
         margin: 0;
-        padding-left: 30px;
+        padding-left: 25px;
     }
 
     .bar-left:hover {
@@ -558,7 +558,7 @@ footer .bloc-footer {
         padding-bottom: 10px;
         width: 50%;
         margin: 0;
-        padding-right: 30px;
+        padding-right: 25px;
     }
 
     .bar-right:hover {
